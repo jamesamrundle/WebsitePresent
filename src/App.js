@@ -9,7 +9,9 @@ class App extends Component {
         this.state= {me:{name: "James Rundle",
                 bio:"Hi I am James I. I like eating bread. I like writing code. I like making money. Hire me.",
                 phone:"816-777-8998",
-                email:"jamesamrundle@gmail.com"},
+                email:"jamesamrundle@gmail.com",
+                occupation:"Computer Science Student",
+                objective:"searching for intership opportunities where I work with and expand my React capabilities"},
             address:{street: "666 Gumdrop Lane",
                 city: "Charleston",
                 state: "South Carolina",
@@ -20,7 +22,7 @@ class App extends Component {
     return (
 
         <div>
-        <Header data={this.state.address}/>
+        <Header data={this.state}/>
         <About data={this.state}/>
         </div>
     );
