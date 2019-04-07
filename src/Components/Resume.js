@@ -9,11 +9,10 @@ class Resume extends Component {
 
                 <div className={"main-col"}>
 
-                <h3>College of Charleston</h3>
-                    <p>B.S in Computer Science GPA : 3.5</p>
-                    <p>Expected Graduation : 2021</p>
-                    <p>Lead development on M^3 project in Dr. Bowring's Cirdle Lab, Active in leadership in Department Clubs,
-                        tutor in walk-in Labs, and participated in mentorship/ outreach opportunities</p>
+                <h3>School</h3>
+                    <p>Degree and GPA</p>
+                    <p>Date of Graduation</p>
+                    <p>info and accomplishments</p>
                 </div>
             </div>
 
@@ -22,12 +21,12 @@ class Resume extends Component {
 
                 <div className={"main-col"}>
 
-                <h3> Boeing </h3>
-                    <p> Programmer Analyst Intern</p>
-                    <p> May 2018 - August 2018</p>
-                    <p> Fully participated in Agile environment. Analyzed and implimented bugfixes for Java codebase and
-                        lead implementation of App Dynamics to gather performance metrics on software product</p>
+                <h3> Company </h3>
+                    <p> Position</p>
+                    <p> Dates Worked</p>
+                    <p> Info and Accomplishments</p>
                 </div>
+
             </div>
 
             <div className={"skill"}>
