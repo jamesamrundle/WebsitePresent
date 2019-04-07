@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import About from "./Components/About"
 import Header from"./Components/Header"
+import Resume from "./Components/Resume"
 
 class App extends Component {
 
@@ -22,8 +23,9 @@ class App extends Component {
     return (
 
         <div>
-        <Header data={this.state}/>
-        <About data={this.state}/>
+            <Header data={this.state}/>
+            <About data={this.state}/>
+            <Resume/>
         </div>
     );
   }
