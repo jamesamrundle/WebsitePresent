@@ -38,6 +38,7 @@ class About extends Component {
                                 <span>{address.street}</span> <br/>
                                 <span>{address.city}, {address.state} {address.zip}</span> <br/>
                             </p>
+                        </div>
                             <a style={{ float:"right"}} className={"button"} href={process.env.PUBLIC_URL+"/resume.pdf"} >Download Resume</a>
 
                             <p>
@@ -45,7 +46,7 @@ class About extends Component {
                                 <span>{me.email}</span> <br />
                             </p>
 
-                        </div>
+
                     </div>
                 </div>
 
