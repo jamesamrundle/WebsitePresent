@@ -3,21 +3,11 @@ import React, { Component } from 'react';
 class About extends Component {
    constructor(props){
        super(props)
-
-       this.state= {me:{name: "James Rundle",
-               bio:"Hi I am James I. I like eating bread. I like writing code. I like making money. Hire me.",
-           phone:"816-777-8998",
-           email:"jamesamrundle@gmail.com"},
-                address:{street: "666 Gumdrop Lane",
-                        city: "Charleston",
-                        state: "South Carolina",
-                        zip:"29411"}
-                    }
        }
 
 
     render() {
-        let {me,address} = this.state;
+        let {me,address} = this.props.data;
         return (
 
 
