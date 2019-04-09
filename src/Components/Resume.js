@@ -1,6 +1,44 @@
 import React, {Component} from 'react';
 
 class Resume extends Component {
+    education = () => {return this.props.data.education.map( (school) =>{
+            return(
+                <div key={school.name} >
+                    <h3>{school.name}</h3>
+                    <p>{school.degreeAndGpa} </p>
+                    <p>Graduated  : {school.year}</p>
+                    <p> {school.description} </p>
+                </div>
+            )
+        }
+    )
+    };
+
+    work = () => {return(
+        this.props.data.jobs.map( (job) =>{
+            return(
+                <div>
+                    <h3>{job.company}</h3>
+                    <p>{job.title} {job.date}</p>
+                    <p>{job.description}</p>
+                </div>
+            )
+        })
+    )
+    };
+
+    skills = () =>{ return(
+        this.props.data.skills.map((skill)=>{
+            var className = "bar-expand " + skill.name;
+            return(
+                <li key={skill.name}>
+                    <span style={{width:skill.level}} className={className}></span><em>{skill.name}</em>
+                </li>
+            )
+        })
+    )
+    };
+
     render() {
         return (
             <section id={"resume"}>
@@ -9,11 +47,8 @@ class Resume extends Component {
 
                 <div className={"main-col"}>
 
-                <h3>School</h3>
-                    <p>Degree and GPA</p>
-                    <p>Date of Graduation</p>
-                    <p>info and accomplishments</p>
-                </div>
+                    {this.education()}
+            </div>
             </div>
 
             <div className={"work"}>
@@ -21,12 +56,8 @@ class Resume extends Component {
 
                 <div className={"main-col"}>
 
-                <h3> Company </h3>
-                    <p> Position</p>
-                    <p> Dates Worked</p>
-                    <p> Info and Accomplishments</p>
-                </div>
-
+                    {this.work()}
+            </div>
             </div>
 
             <div className={"skill"}>
@@ -35,12 +66,7 @@ class Resume extends Component {
                     <div className="bars">
 
                         <list className="skills">
-                            <li  >
-                                <span style={{width:"95%"}} className={"bar-expand"}></span><em>being really cool</em>
-                            </li>
-                            <li >
-                                <span style={{width:"86%"}} className={"bar-expand"}></span><em>being really hungry</em>
-                            </li>
+                            {this.skills()}
                         </list>
                     </div>
                 </div>
