@@ -20,8 +20,8 @@ class Contact extends Component {
                             <input type={"text"} placeholder={"subject required"} name={"subject"} />
                         </div>
                         <div>
-                            <label>Name *</label>
-                            <textarea cols={"35"} rows={"10"} type={"text"} placeholder={"name required"} name={"name"} required/>
+                            <label>Message*</label>
+                            <textarea cols={"35"} rows={"10"} type={"text"} placeholder={"message"} name={"name"} />
                         </div>
                     </fieldset>
                 </form>
